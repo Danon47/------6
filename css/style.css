@@ -323,7 +323,7 @@ body {
 
 
 
-/*
+
 @media (max-width: 1024px) {
   .services-list {
     --offsets: 1;
@@ -332,10 +332,10 @@ body {
 
 @media (max-width: 380px) {
   .services-list {
-    --offsets: 1;
+    --offsets: 0;
   }
 }
- */
+
 
 
 
@@ -398,6 +398,14 @@ body {
 .articles {
   border-bottom: 1px solid var(--liner-c);
 }
+
+
+@media (max-width: 1024px) {
+  .articles-list {
+    --offsets: 0;
+  }
+}
+
 
 .articles-list{
   flex-wrap: wrap;
