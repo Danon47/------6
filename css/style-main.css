@@ -119,34 +119,50 @@ h1,h2,h3,p {
 
 .main-title {
   color: #FFFFFF;
+
 }
 
 .right-side {
   flex-direction: column;
-  width: 48%;
+  width: 28%;
+  height: 100%;
   margin-right: 25px;
+  align-items: center;
 }
 
 .left-side {
   flex-direction: column;
-  width: 48%;
+  width: 70%;
 }
 
-.pb {
+.p-size {
   width: 100%;
-  height: 425px;
-  background-color: #FFFFFF;
+  height: 300px;
   margin-bottom: 25px;
   border-radius: 32px;
-  padding: 50px;
+  align-items: end;
+  background-color: #fff;
 }
 
-
-.pl {
-  width: 100%;
-  height: 200px;
-  background-color: #FFFFFF;
-  margin-bottom: 25px;
+.project-inf {
+  background-color: #1c1c1ce7;
   border-radius: 32px;
-  padding: 50px;
+  padding: 30px;
+  width: 100%;
+  color: #BC9FCF;
+}
+
+.project1 {
+  background-image: url(/img/balconies.png);
+  background-size: cover;
+}
+
+.project2 {
+  background-image: url(/img/lagoona.png);
+  background-size: cover;
+}
+
+.project3 {
+  background-image: url(/img/first-bg.jpg);
+  background-size: cover;
 }
