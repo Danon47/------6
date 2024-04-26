@@ -80,7 +80,7 @@ p {
 
 }
 body {
-  min-width: 380x;
+  min-width: 320x;
   font-family: 'Montserrat', sans-serif;
   /* background: var(--off-white); */
 }
@@ -121,6 +121,10 @@ h1, h2, h3 {
   padding: 19px 38px;
   border-radius: 16px;
   transition: color .3s ease-in-out, background-color .3s ease-in-out, border .3s ease-in-out;
+}
+
+.btn:focus {
+  outline: none;
 }
 
 .container {
@@ -201,6 +205,9 @@ h1, h2, h3 {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+.header__search:focus {
+  outline: none;
 }
 
 .header__search:focus svg {
@@ -384,7 +391,7 @@ h1, h2, h3 {
 .aboutus__card2 {
   border: 1px solid var(--light-gray);
   border-radius: 32px;
-  width: 870px;
+  min-width: 870px;
   margin-bottom: 32px;
   padding: 63px 65px ;
   padding-left: 300px;
@@ -397,7 +404,7 @@ h1, h2, h3 {
 .aboutus__card3 {
   border: 1px solid var(--light-gray);
   border-radius: 32px;
-  width: 870px;
+  min-width: 870px;
   padding: 63px 65px ;
   padding-left: 300px;
 
@@ -412,7 +419,6 @@ h1, h2, h3 {
   line-height: 29.26px;
   color: var(--black);
   margin-bottom: 8px;
-  max-width: 452px;
 
 }
 
@@ -501,9 +507,8 @@ h1, h2, h3 {
 }
 
 .stages__left {
-  max-width: 870px;
+  min-width: 870px;
   max-height: 460px;
-  min-width: 437px;
   background-image: url(../img/strages.png);
   background-position: center;
   background-size: cover;
@@ -617,7 +622,9 @@ h1, h2, h3 {
   margin-right: 21px;
 }
 
+
 .social__link svg {
+  display: block;
   fill: var(--gray);
   transition: fill .3s ease-in-out;
 }
@@ -625,6 +632,7 @@ h1, h2, h3 {
 .social__link:focus svg {
   outline: 2px solid var(--yellow);
   outline-offset: 4px;
+
 
 }
 
@@ -734,17 +742,29 @@ h1, h2, h3 {
   text-align: left;
   user-select: none;
   cursor: pointer;
+
 }
 
+
+
 .form__checkbox {
-  appearance: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
   position: absolute;
 }
+
+  .form__check input:focus + span{
+    outline: 1px solid white;
+    outline-offset: 5px;
+  }
 
 .form__checkbox_text {
   position: relative;
   padding-left: 18px;
 }
+
+
 
 .form__checkbox_text::before {
   content: "";
