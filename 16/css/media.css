@@ -1,0 +1,321 @@
+@media (max-width: 992px) {
+
+    .container {
+        max-width: 715px;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    .main {
+        padding-bottom: 15px;
+    }
+
+    .main__title {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: left;
+
+        color: #FFFFFF;
+        margin-bottom: 17px;
+        letter-spacing: -2px;
+    }
+
+    .main__descr {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+
+        color: #FFFFFF;
+        margin-bottom: 62px;
+    }
+
+    .main__pic {
+        align-items: center;
+        padding: 105px 0;
+    }
+
+    .adv {
+      margin-bottom: 80px;
+  }
+
+    .adv__title {
+      letter-spacing: -1px;
+    }
+
+    .adv__pic {
+      width: 211px;
+      height: 187px;
+
+    }
+
+    .adv__item {
+      flex-direction: column;
+      display: block;
+    }
+
+    .item__pic {
+      margin-bottom: 10px;
+    }
+
+    .item__descr {
+      letter-spacing: 1px;
+    }
+
+    .teach {
+      padding-bottom: 27px;
+    }
+
+    .teach__title {
+      letter-spacing: -1px;
+    }
+
+    .teach__card:nth-child(-n + 2) {
+      margin-bottom: 24px;
+    }
+
+    .courses {
+      margin-bottom: 50px;
+  }
+
+    .courses__title {
+      margin-bottom: 23px;
+      letter-spacing: -1px;
+    }
+
+
+    .courses__card {
+      min-height: 556px;
+    }
+
+
+
+
+
+    .courses__btn {
+      padding: 20.5px 53px;
+      top: 286px;
+    }
+
+
+
+}
+
+
+@media (max-width: 768px) {
+
+  .container {
+    max-width: 534px;
+  }
+
+  .header {
+    flex-direction: column;
+    height: 133px;
+    justify-content: center;
+  }
+
+  .header__logo {
+    padding-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-self: center;
+    padding-bottom: 31px;
+  }
+
+  .nav__list {
+    margin: 0;
+    padding-bottom: 5px;
+
+  }
+
+  .main__card {
+    padding: 65px 0;
+  }
+
+  .main__pic {
+    display: none;
+  }
+
+  .main {
+    padding-bottom: 70px;
+  }
+
+  .adv__pic {
+    width: 150px;
+    height: 134px;
+    margin-top: 0px;
+  }
+
+  .adv__pic img {
+    min-width: 150px;
+  }
+
+  .adv {
+    margin-bottom: 43px;
+    }
+
+    .courses__card {
+      min-height: 653px;
+    }
+
+    .courses__btn {
+      padding: 21px 46px;
+      top: 383px;
+    }
+
+    .courses__descr {
+      letter-spacing: -1px;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 313px;
+  }
+
+  .header {
+    height: 118px;
+}
+
+  .header__logo {
+    padding-bottom: 0px;
+    margin-top: 50px;
+    margin-bottom: 22px;
+
+  }
+
+  .header__nav {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .nav__list {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .nav__link {
+    text-wrap: nowrap;
+}
+
+  .main {
+    padding-bottom: 27px;
+    margin-bottom: 51px;
+    }
+
+  .main__card {
+    padding: 23px 0;
+    padding-top: 38px;
+  }
+
+  .main__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin-bottom: 6px;
+  }
+
+  .main__descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    margin-bottom: 44px;
+  }
+
+  .main__btn {
+    padding: 20.5px 51px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: left;
+
+  }
+
+  .adv {
+    margin-bottom: 20px;
+  }
+
+  .adv__pic  {
+    display: none;
+  }
+
+  .adv__title {
+    letter-spacing: -1px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 1px;
+  }
+
+  .top-set {
+    margin-top: 47px;
+  }
+
+  .adv__item {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .item__descr {
+    letter-spacing: normal;
+  }
+
+  .adv__item {
+    margin-bottom: 20px;
+  }
+
+  .teach__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 23px;
+  }
+
+  .teach {
+    padding-top: 44px;
+    margin-bottom: 44px;
+  }
+
+  .teach__card:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+  .courses__title {
+    margin-bottom: 23px;
+    letter-spacing: -1px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .courses__name {
+    line-height: 23.4px;
+  }
+
+  .courses__descr {
+    letter-spacing: normal;
+  }
+
+  .courses__btn {
+    padding: 20.5px 53px;
+  }
+
+  .courses {
+    margin-bottom: 20px;
+}
+
+
+
+}
+
+
+
+
+

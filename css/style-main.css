@@ -166,3 +166,9 @@ h1,h2,h3,p {
   background-image: url(/img/first-bg.jpg);
   background-size: cover;
 }
+
+.project0 {
+  background-image: url(/img/hero.png);
+  background-size: cover;
+  background-position: right;
+}
