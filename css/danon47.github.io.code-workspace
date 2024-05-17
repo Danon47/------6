@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "danon47.github.io",
+			"path": ".."
+		},
+		{
+			"name": "16_grid",
+			"path": "../../../16 skillbox/weblayout/16_grid"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "danon47.github.io"
+	}
+}

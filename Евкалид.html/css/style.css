@@ -163,6 +163,7 @@ h1, h2, h3 {
   font-weight: 600;
   line-height: 21.94px;
   color: var(--black);
+  text-wrap: nowrap;
   position: relative;
 }
 
