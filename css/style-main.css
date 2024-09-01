@@ -8,10 +8,10 @@ html {
   box-sizing: inherit;
 }
 
-:root {
+/* :root {
 
 
-}
+} */
 
 @font-face {
   font-family: 'OpenSans';
@@ -119,29 +119,28 @@ h1,h2,h3,p {
 
 .main-title {
   color: #FFFFFF;
+  margin-bottom: 30px;
 
 }
 
-.right-side {
-  flex-direction: column;
-  width: 28%;
-  height: 100%;
-  margin-right: 25px;
-  align-items: center;
-}
-
-.left-side {
-  flex-direction: column;
-  width: 70%;
+.project {
+  flex-wrap: wrap;
 }
 
 .p-size {
-  width: 100%;
+  width: 480px;
   height: 300px;
   margin-bottom: 25px;
+  margin-right: 25px;
   border-radius: 32px;
   align-items: end;
-  background-color: #fff;
+  background-color: #8d8a8a98;
+
+  background-size: cover;
+}
+
+.p-size:nth-child(2n) {
+  margin-right: 0;
 }
 
 .project-inf {
@@ -150,27 +149,55 @@ h1,h2,h3,p {
   padding: 30px;
   width: 100%;
   color: #BC9FCF;
+  position: relative;
+  overflow: hidden; /* Чтобы избежать выхода дочерних элементов за пределы родительского блока */
+  transition: height 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+
+.project-descr {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%; /* Ширина равна ширине родительского блока */
+  padding: 10px;
+  transition: opacity .2s ease-in, visibility .2s ease-in;
+}
+
+.project-inf:hover .project-descr {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  height: 80px;
+}
+
+.aProject::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .project1 {
   background-image: url(/img/balconies.png);
-  background-size: cover;
 }
 
 .project2 {
   background-image: url(/img/lagoona.png);
-  background-size: cover;
 }
 
 .project3 {
   background-image: url(/img/first-bg.jpg);
-  background-size: cover;
 }
 
 .project0 {
   background-image: url(/img/hero.png);
-  background-size: cover;
   background-position: right;
+}
+.project4 {
+  background-image: url(/img/blanchard.png);
 }
 
 
@@ -182,6 +209,7 @@ h1,h2,h3,p {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.473);
   z-index: 9998;
+
 }
 
 .overLayDiv {

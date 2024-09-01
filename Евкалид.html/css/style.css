@@ -468,6 +468,10 @@ h1, h2, h3 {
 
 }
 
+.li_descr {
+  margin-bottom: 10px;
+}
+
 .right__btn1 {
   margin-right: 28px;
   padding: 21px 38px;
