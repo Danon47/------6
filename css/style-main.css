@@ -120,7 +120,6 @@ h1,h2,h3,p {
 .main-title {
   color: #FFFFFF;
   margin-bottom: 30px;
-
 }
 
 .project {
@@ -137,6 +136,8 @@ h1,h2,h3,p {
   background-color: #8d8a8a98;
 
   background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
 .p-size:nth-child(2n) {
@@ -149,26 +150,44 @@ h1,h2,h3,p {
   padding: 30px;
   width: 100%;
   color: #BC9FCF;
-  position: relative;
-  overflow: hidden; /* Чтобы избежать выхода дочерних элементов за пределы родительского блока */
-  transition: height 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  position: absolute; /* Абсолютное позиционирование для управления размещением */
+  bottom: 0; /* Начальная позиция у нижней границы родителя */
+  left: 0;
+  overflow: hidden; /* Скрытие содержимого при уменьшенной высоте */
+  max-height: 80px; /* Исходная высота */
+  transition: max-height 0.5s ease-in-out; /* Плавное изменение максимальной высоты */
+}
+
+.descrTitle {
+  color: #d5c4e2;
+  padding-left: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out; /* Плавное изменение прозрачности */
 }
 
 .project-descr {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
-  left: 0;
-  width: 100%; /* Ширина равна ширине родительского блока */
-  padding: 10px;
-  transition: opacity .2s ease-in, visibility .2s ease-in;
+  transition: opacity 0.3s ease-in-out; /* Плавное изменение прозрачности */
+}
+
+.project-inf:hover {
+  max-height: 300px; /* Достаточно большая высота, чтобы вместить весь список */
+}
+
+.project-inf:hover .descrTitle {
+  opacity: 1;
+  visibility: visible;
 }
 
 .project-inf:hover .project-descr {
   opacity: 1;
   visibility: visible;
-  position: relative;
-  height: 80px;
+}
+
+.project-descr li {
+  padding: 8px 0;
 }
 
 .aProject::before {
@@ -210,6 +229,7 @@ h1,h2,h3,p {
   background-color: rgba(255, 255, 255, 0.473);
   z-index: 9998;
 
+  /* display: none; */
 }
 
 .overLayDiv {
@@ -226,12 +246,42 @@ h1,h2,h3,p {
     transition: transform 0.5s ease 0s, display 0.5s ease 0s;
 
     padding: 40px;
+
+    /* display: none; */
+}
+
+.btn-wrapper {
+  justify-content: center;
+}
+
+.btn-close {
+  margin: auto 0;
+  background-color: #BC9FCF;
+  border-radius: 20px;
+  padding: 20px 30px;
+  color: #240935;
+  font-weight: 600;
+  transition: background-color .3s ease-in-out;
+}
+
+.btn-close:focus {
+  background-color: #d2bbe2;
+}
+
+.btn-close:hover {
+  background-color: #d2bbe2;
+}
+
+.btn-close:active {
+  background-color: #7c6e86;
 }
 
 .overH {
   color: #fff;
   margin: 0;
   margin-bottom: 20px;
+
+
 }
 
 .overP {
@@ -241,7 +291,24 @@ h1,h2,h3,p {
   margin-bottom: 15px;
 }
 
+.overList {
+  margin-bottom: 20px;
+}
+
 .overA {
   color: #BC9FCF;
   margin-bottom: 10px;
+  transition: color .3s ease-in-out;
+}
+
+.overA:focus {
+  color: #d2bbe2;
+}
+
+.overA:hover {
+  color: #d2bbe2;
+}
+
+.overA:active {
+  color: #7c6e86;
 }
