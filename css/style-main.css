@@ -150,12 +150,12 @@ h1,h2,h3,p {
   padding: 30px;
   width: 100%;
   color: #BC9FCF;
-  position: absolute; /* Абсолютное позиционирование для управления размещением */
-  bottom: 0; /* Начальная позиция у нижней границы родителя */
+  position: absolute;
+  bottom: 0;
   left: 0;
-  overflow: hidden; /* Скрытие содержимого при уменьшенной высоте */
-  max-height: 80px; /* Исходная высота */
-  transition: max-height 0.5s ease-in-out; /* Плавное изменение максимальной высоты */
+  overflow: hidden;
+  max-height: 80px;
+  transition: max-height 0.5s ease-in-out;
 }
 
 .descrTitle {
@@ -163,17 +163,16 @@ h1,h2,h3,p {
   padding-left: 10px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out; /* Плавное изменение прозрачности */
-}
+  transition: opacity 0.3s ease-in-out;
 
 .project-descr {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out; /* Плавное изменение прозрачности */
+  transition: opacity 0.3s ease-in-out;
 }
 
 .project-inf:hover {
-  max-height: 300px; /* Достаточно большая высота, чтобы вместить весь список */
+  max-height: 300px;
 }
 
 .project-inf:hover .descrTitle {
@@ -200,27 +199,27 @@ h1,h2,h3,p {
 }
 
 .project1 {
-  background-image: url(/danon47.github.io/img/balconies.png);
+  background-image: url(//img/balconies.png);
 }
 
 .project2 {
-  background-image: url(/danon47.github.io/img/lagoona.png);
+  background-image: url(//img/lagoona.png);
 }
 
 .project3 {
-  background-image: url(/danon47.github.io/img/first-bg.jpg);
+  background-image: url(//img/first-bg.jpg);
 }
 
 .project0 {
-  background-image: url(/danon47.github.io/img/hero.png);
+  background-image: url(//img/hero.png);
   background-position: right;
 }
 .project4 {
-  background-image: url(/danon47.github.io/img/blanchard.png);
+  background-image: url(//img/blanchard.png);
 }
 
 .project5 {
-  background-image: url(/danon47.github.io/img/pairs.PNG)
+  background-image: url(//img/pairs.PNG)
 }
 
 
