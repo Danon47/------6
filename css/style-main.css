@@ -164,6 +164,7 @@ h1,h2,h3,p {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out;
+}
 
 .project-descr {
   opacity: 0;
@@ -219,7 +220,7 @@ h1,h2,h3,p {
 }
 
 .project5 {
-  background-image: url(/img/pairs.PNG)
+  background-image: url(/danon47.github.io/img/pairs.PNG);
 }
 
 
