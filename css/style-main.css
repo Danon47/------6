@@ -199,27 +199,27 @@ h1,h2,h3,p {
 }
 
 .project1 {
-  background-image: url(//img/balconies.png);
+  background-image: url(/img/balconies.png);
 }
 
 .project2 {
-  background-image: url(//img/lagoona.png);
+  background-image: url(/img/lagoona.png);
 }
 
 .project3 {
-  background-image: url(//img/first-bg.jpg);
+  background-image: url(/img/first-bg.jpg);
 }
 
 .project0 {
-  background-image: url(//img/hero.png);
+  background-image: url(/img/hero.png);
   background-position: right;
 }
 .project4 {
-  background-image: url(//img/blanchard.png);
+  background-image: url(/img/blanchard.png);
 }
 
 .project5 {
-  background-image: url(//img/pairs.PNG)
+  background-image: url(/img/pairs.PNG)
 }
 
 
